@@ -35,10 +35,10 @@ h1 {
 /* Carousel */
 
 .slider-size {
-height: 400px; /* This is your slider height */
+  height: 400px; /* This is your slider height */
 }
 
 .carousel {
-width:100%; 
-margin:0 auto; /* center your carousel if other than 100% */ 
+  width:100%; 
+  margin:0 auto; /* center your carousel if other than 100% */ 
 }
