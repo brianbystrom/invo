@@ -4,11 +4,11 @@ html,body {
 
 h1 {
   font-size:80px;
-  color:#DDCCEE;
+  color:#f4f4f4;
 }
 
 .lead {
-	color:#DDCCEE;
+	color:#f4f4f4;
 }
 
 
@@ -17,8 +17,8 @@ h1 {
   margin: 0 auto;
   width: 100%;
   min-height:100%;
-  background-color:#110022;
-  color:#eee;
+  background-color:#3498db;
+  color:#f4f4f4;
   overflow:hidden;
 }
 
@@ -27,10 +27,25 @@ h1 {
   text-decoration:none;
 }
 
-.v-center {
-  
+.btn-primary {
+  background: #FF6530;
 }
-  
+
+.btn-primary:active {
+  background: #84F42E;
+  color: #62E100;
+} 
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default.focus,
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+  color: #333;
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
 
 /* Carousel */
 
