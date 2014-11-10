@@ -31,21 +31,19 @@ h1 {
   background: #FF6530;
 }
 
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary.focus,
+.open > .dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #FF8359;
+  border-color: #285e8e;
+}
+
 .btn-primary:active {
   background: #84F42E;
   color: #62E100;
 } 
-
-.btn-default:hover,
-.btn-default:focus,
-.btn-default.focus,
-.btn-default:active,
-.btn-default.active,
-.open > .dropdown-toggle.btn-default {
-  color: #333;
-  background-color: #e6e6e6;
-  border-color: #adadad;
-}
 
 /* Carousel */
 
