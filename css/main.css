@@ -2,6 +2,10 @@ html,body {
   height:100%;
 }
 
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+} 
+
 h1 {
   font-size:80px;
   color:#f4f4f4;
@@ -13,6 +17,7 @@ h1 {
 
 
 /* Custom container */
+
 .container-full {
   margin: 0 auto;
   width: 100%;
@@ -54,4 +59,14 @@ h1 {
 .carousel {
   width:100%; 
   margin:0 auto; /* center your carousel if other than 100% */ 
+}
+
+/* Auction container */
+
+.auction-spacer {
+    margin-top: 50px;
+}
+
+.auction-feature {
+    margin-bottom: 30px;
 }
