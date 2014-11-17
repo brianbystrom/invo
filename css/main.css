@@ -61,12 +61,3 @@ h1 {
   margin:0 auto; /* center your carousel if other than 100% */ 
 }
 
-/* Auction container */
-
-.auction-spacer {
-    margin-top: 50px;
-}
-
-.auction-feature {
-    margin-bottom: 30px;
-}
