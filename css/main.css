@@ -54,6 +54,8 @@ h1 {
 
 .slider-size {
   height: 400px; /* This is your slider height */
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 .carousel {
