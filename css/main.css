@@ -21,7 +21,6 @@ h1 {
 .container-full {
   margin: 0 auto;
   width: 100%;
-  min-height:100%;
   background-color:#3498db;
   color:#f4f4f4;
   overflow:hidden;
@@ -51,15 +50,40 @@ h1 {
 } 
 
 /* Carousel */
-
-.slider-size {
-  height: 400px; /* This is your slider height */
-  max-width: 960px;
-  margin: 0 auto;
+.transition-timer-carousel .carousel-caption .carousel-caption-header {
+  margin-top: 10px;
+  font-size: 24px;
 }
 
-.carousel {
-  width:100%; 
-  margin:0 auto; /* center your carousel if other than 100% */ 
+@media (min-width: 970px) {
+    /* Lower the font size of the carousel caption header so that our caption
+    doesn't take up the full image/slide on smaller screens */
+  .transition-timer-carousel .carousel-caption .carousel-caption-header {
+    font-size: 36px;
+  }
 }
-
+.transition-timer-carousel .carousel-indicators {
+  bottom: 0px;
+  margin-bottom: 5px;
+}
+.transition-timer-carousel .carousel-control {
+  z-index: 11;
+}
+.transition-timer-carousel .transition-timer-carousel-progress-bar {
+    height: 5px;
+    background-color: #5cb85c;
+    width: 0%;
+    margin: -5px 0px 0px 0px;
+    border: none;
+    z-index: 11;
+    position: relative;
+}
+.transition-timer-carousel .transition-timer-carousel-progress-bar.animate{
+    /* We make the transition time shorter to avoid the slide transitioning
+    before the timer bar is "full" - change the 4.25s here to fit your
+    carousel's transition time */
+    -webkit-transition: width 4.25s linear;
+  -moz-transition: width 4.25s linear;
+  -o-transition: width 4.25s linear;
+  transition: width 4.25s linear;
+}
