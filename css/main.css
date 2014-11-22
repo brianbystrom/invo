@@ -47,7 +47,7 @@ h1 {
 .btn-primary:active {
   background: #84F42E;
   color: #62E100;
-} 
+}
 
 /* Carousel */
 .transition-timer-carousel .carousel-caption .carousel-caption-header {
@@ -86,4 +86,11 @@ h1 {
   -moz-transition: width 4.25s linear;
   -o-transition: width 4.25s linear;
   transition: width 4.25s linear;
+}
+
+/* 3 part what to do section */
+
+ul.thumbnails {
+  list-style: none;
+  margin: 15px auto;
 }
