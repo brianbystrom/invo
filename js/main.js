@@ -1,3 +1,9 @@
+//navbar
+$(document).on('click', '.yamm .dropdown-menu', function(e) {
+   e.stopPropagation()
+})
+
+
 //sunburst
 
 $('div.container-full').pow({
