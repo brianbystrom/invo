@@ -18,6 +18,14 @@ h1 {
 
 /* Navigation bar */
 
+.yamm {
+  margin-bottom: 0px;
+}
+
+.yamm .navbar-brand {
+  padding: 8px 20px;
+}
+
 .yamm .nav,
 .yamm .collapse,
 .yamm .dropup,
@@ -31,7 +39,7 @@ h1 {
   left: auto;
 }
 .yamm .yamm-content {
-  padding: 0px 30px;
+  padding: 0px 20px;
 }
 .yamm .dropdown.yamm-fw .dropdown-menu {
   left: 0;
@@ -114,6 +122,10 @@ h1 {
 
 /* testimonials */
 
+.userssay {
+  padding-top: 20px;
+  color: #f4f4f4;
+}
 
 .testimonials blockquote {
   position: relative;
@@ -122,6 +134,7 @@ h1 {
   margin-top: 20px;
   margin-bottom: 100px;
   border: 1px solid #ecedf1;
+  color: #0665A2;
 }
 .testimonials blockquote:before {
   content: '';
@@ -156,7 +169,7 @@ h1 {
 }
 
 blockquote p.clients-words {
-    font-size: 14px;
+  font-size: 14px;
 }
 span.clients-name {
   font-size: 14px;
