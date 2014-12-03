@@ -19,7 +19,9 @@ h1 {
 /* Navigation bar */
 
 .yamm {
+  margin: auto;
   margin-bottom: 0px;
+  max-width: 1170px;
 }
 
 .yamm .navbar-brand {
