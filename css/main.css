@@ -15,6 +15,12 @@ h1 {
 	color:#f4f4f4;
 }
 
+@media (min-width: 1400px) {
+  .container {
+    width: 1200px;
+  }
+}
+
 
 /* Navigation bar */
 
@@ -22,6 +28,7 @@ h1 {
   margin: auto;
   margin-bottom: 0px;
   max-width: 1170px;
+  border-radius: 0px !important;
 }
 
 .yamm .navbar-brand {
@@ -134,7 +141,7 @@ h1 {
 }
 
 .btn-green {
-  background: #6AF103;
+  background: #62E100;
   border-color: #f4f4f4;
 }
 
@@ -257,8 +264,16 @@ ul.thumbnails {
   margin: 0px auto;
 }
 
-.thumbnail {
-  margin-bottom: 0px;
+@media (min-width: 1200px) {
+    .getstart .thumbnail {
+      padding-top: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .getstart {
+      padding: 2px !important;
+    }
 }
 
 .getstart:first-child div.thumbnail {
@@ -324,3 +339,17 @@ ul.thumbnails {
 
 /* auction space */
 
+.orangeburst {
+  padding-top: 20px;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #3498db;
+  color: #f4f4f4;
+  overflow: hidden;
+}
+
+.auction {
+  border: 1px solid #ccc;
+  background: #f4f4f4;
+  color: #0665A2;
+}
