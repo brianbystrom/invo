@@ -81,13 +81,13 @@ $(document).ready(function(){
             .blur()
           .delay(1600)
           .fadeIn(function(){
-            title.text("Log in is successful");
+            title.text("success!");
             button.attr("data-dismiss", "modal");
           });
     }
   });
 
-  $('#myModal').on('hidden.bs.modal', function (e) {
+  $('#loginModal').on('hidden.bs.modal', function (e) {
     var inputs = $('form input');
     var title = $('.modal-title');
     var progressBar = $('.progress-bar');
@@ -103,6 +103,23 @@ $(document).ready(function(){
         .addClass("btn-primary")
         .text("Ok")
         .removeAttr("data-dismiss");
-                
+  });
+
+  $('#signupModal').on('hidden.bs.modal', function (e) {
+    var inputs = $('form input');
+    var title = $('.modal-title');
+    var progressBar = $('.progress-bar');
+    var button = $('.modal-footer button');
+
+    inputs.removeAttr("disabled");
+
+    title.text("Sign up");
+
+    progressBar.css({ "width" : "0%" });
+
+    button.removeClass("btn-success")
+        .addClass("btn-primary")
+        .text("Ok")
+        .removeAttr("data-dismiss");
   });
 });

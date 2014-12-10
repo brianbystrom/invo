@@ -33,7 +33,7 @@
               <li>
                 <div class="yamm-content">
                   <ul class="list-unstyled">
-                    <li class="col-sm-3">
+                    <li class="col-xs-3">
                       <ul class="list-unstyled">
                         <li class="dropdown-header">Glyphicons</li>
                         <li><a href="#">Available glyphs</a></li>
@@ -47,7 +47,7 @@
                         <li><a href="#">Disabled menu items</a></li>
                       </ul>
                     </li>
-                    <li class="col-sm-3">
+                    <li class="col-xs-3">
                       <ul class="list-unstyled">
                         <li class="dropdown-header">Button groups</li>
                         <li><a href="#">Basic example</a></li>
@@ -60,7 +60,7 @@
                         <li><a href="#">Single button dropdowns</a></li>
                       </ul>
                     </li>
-                    <li class="col-sm-3">
+                    <li class="col-xs-3">
                       <ul class="list-unstyled">
                         <li class="dropdown-header">Input groups</li>
                         <li><a href="#">Basic example</a></li>
@@ -73,7 +73,7 @@
                         <li><a href="#">Justified</a></li>
                       </ul>
                     </li>
-                    <li class="col-sm-3">
+                    <li class="col-xs-3">
                       <ul class="list-unstyled">
                         <li class="dropdown-header">Navbar</li>
                         <li><a href="#">Default navbar</a></li>
@@ -159,25 +159,31 @@
             </ul>
           </li>
         </ul>
+        <hr class="visible-xs-block">
         <ul class="nav navbar-nav navbar-right">
-          <!-- Forms -->
+          <!-- login/signup -->
           <li class="yamm-content">
-              <button class="btn btn-default navbar-btn" data-toggle="modal" data-target="#myModal">
-                Log in
-              </button>
+            <button class="btn btn-default navbar-btn" data-toggle="modal" data-target="#loginModal">
+              Log in
+            </button>
+          </li>
+          <li class="yamm-content">
+            <button class="btn btn-default navbar-btn" data-toggle="modal" data-target="#signupModal">
+              Sign Up
+            </button>
           </li>
         </ul>
       </div>
     </div>
 
     <!--login modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
 
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-            <h4 class="modal-title" id="myModalLabel">Log in</h4>
+            <h4 class="modal-title" id="loginLabel">Log in</h4>
           </div> <!-- /.modal-header -->
 
           <div class="modal-body">
@@ -217,10 +223,38 @@
 
         </div><!-- /.modal-content -->
       </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
+    </div><!-- /.loginModal -->
+
+    <!--signup modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h4 class="modal-title" id="signupLabel">Sign Up</h4>
+          </div> <!-- /.modal-header -->
+
+          <div class="modal-body">
+            
+          </div> <!-- /.modal-body -->
+
+          <div class="modal-footer">
+            <button class="form-control btn btn-primary">Ok</button>
+
+            <div class="progress">
+              <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="1" aria-valuemin="1" aria-valuemax="100" style="width: 0%;">
+                <span class="sr-only">progress</span>
+              </div>
+            </div>
+          </div> <!-- /.modal-footer -->
+
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.signupModal -->
 
 
-    <!-- top blue area -->
+    <!-- top blue sunburst area -->
     <div class="container-full">
       <div class="container">
         <div class="row">
@@ -289,7 +323,7 @@
         </div> <!-- /row -->
       </div> <!-- end carousel container -->
 
-      <div class="container">
+      <div class="container"> <!-- testimonials -->
         <div class="row">
             <h2 class="text-center text-primary userssay">What do our users say?</h2>
             <hr>
@@ -311,7 +345,7 @@
               </div>
               <div class="col-sm-4">
                 <blockquote>
-                  <p  class="clients-words">Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.</p>
+                  <p class="clients-words">Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum.</p>
                   <span class="clients-name text-primary">— Some Other User</span>
                   <img class="img-circle img-thumbnail" src="http://lorempixel.com/400/400/people/4/">
                 </blockquote>
@@ -319,7 +353,7 @@
             </div><!--/.row-->
           </div><!--/.col-->  
         </div><!--/.row-->
-      </div>
+      </div><!--/testimonials-->
 
     </div> <!-- /container full -->
 
@@ -336,7 +370,7 @@
               <div class="caption">
                 <h3>Sign Up</h3>
                 <p>Description ajsdhfnl;djsfh asdjfhlkj asdjfn;l h asdfh</p>
-                <p align="center"><a href="#" class="btn btn-primary btn-block">Open</a></p>
+                <p align="center"><a href="#" class="btn btn-primary btn-block btn-blue">Open</a></p>
               </div>
             </div>
           </li>
@@ -344,9 +378,9 @@
             <div class="thumbnail">
               <img src="http://placehold.it/320x200" alt="ALT NAME">
               <div class="caption">
-                <h3>Buy a few Bids</h3>
+                <h3>Buy some Bids</h3>
                 <p>Description</p>
-                <p align="center"><a href="#" class="btn btn-primary btn-block">Open</a></p>
+                <p align="center"><a href="#" class="btn btn-primary btn-block btn-green">Open</a></p>
               </div>
             </div>
           </li>
