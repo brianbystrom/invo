@@ -55,12 +55,6 @@ h1 {
   right: 0;
 }
 
-.yamm button {
-
-}
-
-
-
 /* modals */
 
 .modal-dialog {
@@ -257,11 +251,15 @@ span.clients-name {
   right: 10px;
 }
 
-/* 3 part what to do section */
+/* 3 part getting started section */
 
 ul.thumbnails {
   list-style: none;
   margin: 0px auto;
+}
+
+.getstarthead {
+  margin-top: 0px !important;
 }
 
 @media (min-width: 1200px) {
