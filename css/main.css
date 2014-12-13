@@ -6,6 +6,10 @@ body {
     padding-top: 0px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 } 
 
+h1, h2, h3, h4 {
+  margin-top: 5px;
+}
+
 h1 {
   font-size:80px;
   color:#f4f4f4;
@@ -258,8 +262,9 @@ ul.thumbnails {
   margin: 0px auto;
 }
 
-.getstarthead {
-  margin-top: 0px !important;
+.getstart h3 {
+  margin-top: 5px;
+  font-weight: 600;
 }
 
 @media (min-width: 1200px) {
@@ -271,6 +276,9 @@ ul.thumbnails {
 @media (max-width: 768px) {
     .getstart {
       padding: 2px !important;
+    }
+    .getstart h3{
+      font-size: 16px;
     }
 }
 
@@ -344,6 +352,10 @@ ul.thumbnails {
   background-color: #3498db;
   color: #f4f4f4;
   overflow: hidden;
+}
+
+.auctionhead {
+  color: #f4f4f4;
 }
 
 .auction {
