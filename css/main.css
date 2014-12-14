@@ -342,6 +342,30 @@ ul.thumbnails {
 
 }
 
+.getstart:first-child .glyphicon {
+  padding-left: 5px;
+  color: #0665A2;
+}
+
+.getstart:nth-child(2) .glyphicon {
+  padding-left: 5px;
+  color: #4CAF00;
+}
+
+.getstart:nth-child(3) .glyphicon {
+  padding-left: 5px;
+  color: #C73300;
+}
+
+@media (max-width: 450px) {
+    .getstart .thumbnail .glyphicon {
+      color: #f4f4f4;
+      margin-left: -4px
+    }
+    .getstart .btntext {
+      display: none;
+    }
+}
 
 /* auction space */
 
