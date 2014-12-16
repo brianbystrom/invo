@@ -21,9 +21,9 @@ $('div.container-full').pow({
 $('div.orangeburst').pow({
   rays: 16, // positive integer > 1
   bgColorStart: '#FF6530', // any css color
-  rayColorStart: '#FF8359', // any css color
+  rayColorStart: '#FF6530', // any css color
   bgColorEnd: '#FF6530', // any css color
-  rayColorEnd: '#FF6530', // any css color
+  rayColorEnd: '#FF8359', // any css color
   originX: '50%', // percentage, e.g. '33%'
   originY: '10%' // percentage, e.g. '120%'
  

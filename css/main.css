@@ -99,7 +99,6 @@ h1 {
 }
 
 .btn-primary {
-  background: #FF6530;
   border-color: #f4f4f4;
 }
 
@@ -116,6 +115,12 @@ h1 {
   background: #FF4303;
   color: #cccccc;
   border-color: #f4f4f4;
+}
+
+.btn-orange {
+  background: #FF6530;
+  border-color: #f4f4f4;
+  color: #f4f4f4;
 }
 
 .btn-blue {
@@ -386,4 +391,13 @@ ul.thumbnails {
   border: 1px solid #ccc;
   background: #f4f4f4;
   color: #0665A2;
+}
+
+.auction .btn {
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.auction .aucinfo {
+  margin-top: -34px;
 }
