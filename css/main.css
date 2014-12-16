@@ -212,7 +212,7 @@ h1 {
 .testimonials blockquote {
   position: relative;
   background: white;
-  min-height: 150px;
+  min-height: 100px;
   margin-top: 20px;
   margin-bottom: 100px;
   border: 1px solid #ecedf1;
@@ -385,6 +385,7 @@ ul.thumbnails {
 
 .auctionhead {
   color: #f4f4f4;
+  margin: 0px;
 }
 
 .auction {

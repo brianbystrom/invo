@@ -9,7 +9,7 @@ $(document).on('click', '.yamm .dropdown-menu', function(e) {
 $('div.container-full').pow({
   rays: 16, // positive integer > 1
   bgColorStart: '#3499DB', // any css color
-  rayColorStart: '#0F85D1', // any css color
+  rayColorStart: '#3499DB', // any css color
   bgColorEnd: '#58ACE3', // any css color
   rayColorEnd: '#3499DB', // any css color
   originX: '50%', // percentage, e.g. '33%'
