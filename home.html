@@ -369,7 +369,7 @@
             <div class="thumbnail">
               <img src="http://placehold.it/320x200" alt="ALT NAME">
               <div class="caption">
-                <h3 align="center" class="hidden-sm hidden-xs">Sign Up</h3>
+                <h3 align="center" class="hidden-xs">Sign Up</h3>
                 <p class="hidden-sm hidden-xs">Description ajsdhfnl;djsfh asdjfhlkj asdjfn;l h asdfh</p>
                 <a href="#" class="btn btn-primary btn-block btn-blue"><span class="btntext">Sign Up </span><span class="glyphicon glyphicon-list-alt"></a>
               </div>
@@ -379,7 +379,7 @@
             <div class="thumbnail">
               <img src="http://placehold.it/320x200" alt="ALT NAME">
               <div class="caption">
-                <h3 align="center" class="hidden-sm hidden-xs">Buy some Bids</h3>
+                <h3 align="center" class="hidden-xs">Buy some Bids</h3>
                 <p class="hidden-sm hidden-xs">Description</p>
                 <a href="#" class="btn btn-primary btn-block btn-green"><span class="btntext">Bid Packs </span><span class="glyphicon glyphicon-tags"></a>
               </div>
@@ -389,7 +389,7 @@
             <div class="thumbnail">
               <img src="http://placehold.it/320x200" alt="ALT NAME">
               <div class="caption">
-                <h3 align="center" class="hidden-sm hidden-xs">Bid and Win</h3>
+                <h3 align="center" class="hidden-xs">Bid and Win</h3>
                 <p class="hidden-sm hidden-xs">Description</p>
                 <a href="#" class="btn btn-primary btn-orange btn-block"><span class="btntext">Auctions </span><span class="glyphicon glyphicon-gift"></span></a>
               </div>
@@ -403,19 +403,31 @@
     <div class="container orangeburst">
 
       <div class="row">
-        <h2 class="text-center text-primary auctionhead">Auctions</h2>
+        <div class="text-center">
+          <h2 class="text-center text-primary auctionhead">Auctions</h2>
+          <div class="btn-group gridswitch">
+              <a href="#" id="list" class="btn btn-primary btn-md btn-orange"><span class="glyphicon glyphicon-th-list">
+              </span>List</a>
+              <a href="#" id="grid" class="btn btn-primary btn-md btn-orange"><span class="glyphicon glyphicon-th"></span>Grid</a>
+          </div>
+        </div>
         <hr>
-        <ul class="thumbnails col-xs-12">
-          <li class="col-lg-2 col-md-3 col-sm-4 col-xs-6">
+        <ul id="auctions" class="row list-group thumbnails col-xs-12">
+
+          <li class="item col-lg-2 col-md-3 col-sm-4 col-xs-6">
             <div class="auction thumbnail col-xs-12">
-              <img src="http://placehold.it/320x200" alt="ALT NAME">
-              <div href="#" class="btn btn-primary btn-orange pull-right aucinfo col-xs-4"><span class="glyphicon glyphicon-info-sign"></span>
+              <div class="aucimginfo">
+                <img class="group list-group-image" src="http://placehold.it/320x200" alt="ALT NAME">
+                <div href="#" class="btn btn-primary btn-orange pull-right aucinfo aucinfopivot col-xs-4"><span class="glyphicon glyphicon-info-sign"></span>
+                </div>
               </div>
               <div class="caption col-xs-12">
-                <h3 alight="center">iPhone8</h3>
-                <p class="hidden-xs">Description ajsdhfnl;djsfh asdjfhlkj asdjfn;l h asdfh</p>
-                <div href="#" class="btn btn-primary btn-blue col-xs-4"><span class="glyphicon glyphicon-plus-sign"></span></div>
-                <div href="#" class="btn btn-primary btn-green col-xs-8"><span class="glyphicon glyphicon-tag"></span> Bid</div>
+                <h3 class="group list-group-item-heading">iPhone8</h3>
+                <p class="group hidden-xs list-group-item-text">Description ajsdhfnl;djsfh asdjfhlkj asdjfn;l h asdfh</p>
+              </div>
+              <div class="bidtime col-xs-12">
+                <div href="#" class="btn btn-primary btn-blue aucpluspivot col-xs-4"><span class="glyphicon glyphicon-plus-sign"></span></div>
+                <div href="#" class="btn btn-primary btn-green aucbidpivot col-xs-8"><span class="glyphicon glyphicon-tag"></span> Bid</div>
               </div>
             </div>
           </li>

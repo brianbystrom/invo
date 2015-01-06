@@ -123,3 +123,36 @@ $(document).ready(function(){
         .removeAttr("data-dismiss");
   });
 });
+
+// auctions
+
+$(document).ready(function() {
+    $('#list').click(function(event){
+      event.preventDefault();
+      $('#auctions .item').addClass('list-group-item');
+      $('#auctions .item .aucimginfo').addClass('col-xs-3');
+      $('#auctions .item .caption').addClass('col-xs-7');
+      $('#auctions .item .aucinfopivot').removeClass('aucinfo pull-right col-xs-4');
+      $('#auctions .item .aucinfopivot').prependTo('.bidtime');
+      $('#auctions .item .bidtime div').removeClass('col-xs-4 col-xs-8');
+      $('#auctions .item .bidtime div').addClass('col-xs-12');
+      $('#auctions .item .bidtime').removeClass('col-xs-12');
+      $('#auctions .item .bidtime').addClass('col-xs-2');
+    });  
+    $('#grid').click(function(event){
+      event.preventDefault();
+      $('#auctions .item').removeClass('list-group-item');
+      $('#auctions .item .aucimginfo').removeClass('col-xs-3');
+      $('#auctions .item .aucinfopivot').addClass('aucinfo pull-right col-xs-4');
+      $('#auctions .item .caption').removeClass('col-xs-7');
+      $('#auctions .item .aucinfopivot').addClass('pull-right aucinfo');
+      $('#auctions .item .aucinfopivot').appendTo('.aucimginfo');
+      $('#auctions .item').addClass('grid-group-item');
+      $('#auctions .item aucpluspivot').removeClass('col-xs-12');
+      $('#auctions .item aucbidpivot').removeClass('col-xs-12');
+      $('#auctions .item .bidtime .aucpluspivot').addClass('col-xs-4');
+      $('#auctions .item .bidtime .aucbidpivot').addClass('col-xs-8');
+      $('#auctions .item .bidtime').addClass('col-xs-12');
+      $('#auctions .item .bidtime').removeClass('col-xs-2');
+    });
+});
