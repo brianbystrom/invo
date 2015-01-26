@@ -127,32 +127,69 @@ $(document).ready(function(){
 // auctions
 
 $(document).ready(function() {
-    $('#list').click(function(event){
-      event.preventDefault();
-      $('#auctions .item').addClass('list-group-item');
-      $('#auctions .item .aucimginfo').addClass('col-xs-3');
-      $('#auctions .item .caption').addClass('col-xs-7');
-      $('#auctions .item .aucinfopivot').removeClass('aucinfo pull-right col-xs-4');
-      $('#auctions .item .aucinfopivot').prependTo('.bidtime');
-      $('#auctions .item .bidtime div').removeClass('col-xs-4 col-xs-8');
-      $('#auctions .item .bidtime div').addClass('col-xs-12');
-      $('#auctions .item .bidtime').removeClass('col-xs-12');
-      $('#auctions .item .bidtime').addClass('col-xs-2');
-    });  
-    $('#grid').click(function(event){
-      event.preventDefault();
-      $('#auctions .item').removeClass('list-group-item');
-      $('#auctions .item .aucimginfo').removeClass('col-xs-3');
-      $('#auctions .item .aucinfopivot').addClass('aucinfo pull-right col-xs-4');
-      $('#auctions .item .caption').removeClass('col-xs-7');
-      $('#auctions .item .aucinfopivot').addClass('pull-right aucinfo');
-      $('#auctions .item .aucinfopivot').appendTo('.aucimginfo');
-      $('#auctions .item').addClass('grid-group-item');
-      $('#auctions .item aucpluspivot').removeClass('col-xs-12');
-      $('#auctions .item aucbidpivot').removeClass('col-xs-12');
-      $('#auctions .item .bidtime .aucpluspivot').addClass('col-xs-4');
-      $('#auctions .item .bidtime .aucbidpivot').addClass('col-xs-8');
-      $('#auctions .item .bidtime').addClass('col-xs-12');
-      $('#auctions .item .bidtime').removeClass('col-xs-2');
-    });
+
+  $('#list').click(function(event){
+    event.preventDefault();
+    $('#auctions .item').addClass('list-group-item');
+    $('#auctions .item .aucimginfo').addClass('col-xs-3 col-sm-3 col-lg-2');
+    $('#auctions .item .caption').addClass('col-xs-3 col-sm-4 col-lg-6');
+    $('#auctions .item .aucinfopivot').removeClass('aucinfo pull-right col-xs-4');
+
+    for (var i = $('.auction').length; i >= 1; i--) {
+      
+      $('.auc' + [i] + ' .aucimginfo .aucinfopivot').prependTo( $('.auc' + [i] + ' .bidtime'));
+
+    };
+
+    $('#auctions .item .bidtime div').removeClass('col-xs-4 col-xs-8');
+    $('#auctions .item .bidtime div').addClass('col-xs-12');
+    $('#auctions .item .bidtime').removeClass('col-xs-12');
+    $('#auctions .item .bidtime').addClass('col-xs-3 col-sm-2 col-lg-1');
+
+    $('#auctions .item .timeprice').removeClass('col-xs-12');
+    $('#auctions .item .timeprice').addClass('col-xs-3');
+    $('#auctions .item .timeprice div').removeClass('col-xs-5 col-xs-7');
+    $('#auctions .item .timeprice div').addClass('col-xs-12');
+  }); 
+
+  $('#grid').click(function(event){
+    event.preventDefault();
+    $('#auctions .item').removeClass('list-group-item');
+    $('#auctions .item .aucimginfo').removeClass('col-xs-3 col-sm-3 col-lg-2');
+    $('#auctions .item .aucinfopivot').addClass('aucinfo pull-right col-xs-4');
+    $('#auctions .item .caption').removeClass('col-xs-3 col-sm-4 col-lg-6');
+    $('#auctions .item .aucinfopivot').addClass('pull-right aucinfo');
+
+    for (var i = $('.auction').length ; i >= 0; i--) {
+      $('.auc' + [i] + ' .aucinfopivot').appendTo('.auc' + [i] + ' .aucimginfo');
+      $('.auc' + [i] + ' .bidtime .aucinfopivot').remove();
+    };
+
+    $('#auctions .item').addClass('grid-group-item');
+    $('#auctions .item aucpluspivot').removeClass('col-xs-12');
+    $('#auctions .item aucbidpivot').removeClass('col-xs-12');
+    $('#auctions .item .bidtime .aucpluspivot').addClass('col-xs-4');
+    $('#auctions .item .bidtime .aucbidpivot').addClass('col-xs-8');
+    $('#auctions .item .bidtime').addClass('col-xs-12');
+    $('#auctions .item .bidtime').removeClass('col-xs-3 col-sm-2 col-lg-1');
+
+    $('#auctions .item .timeprice').addClass('col-xs-12');
+    $('#auctions .item .timeprice').removeClass('col-xs-3');
+    $('#auctions .item .timeprice .auctime').addClass('col-xs-7');
+    $('#auctions .item .timeprice .aucprice').addClass('col-xs-5');
+    $('#auctions .item .timeprice div').removeClass('col-xs-12');
+  });
+});
+
+jQuery("document").ready (function(){
+   jQuery(".para img, iframe").each(function(){
+      // First I create the div element.
+      var ndiv = jQuery("<div></div>");
+
+      // Now I put the div element into the wrapper, instead of the 'this'
+      ndiv.prependTo(jQuery(this).parents(".wrapper940"));
+
+      // Last I put 'this' into the div.
+      ndiv.append(this);
+   })
 });
