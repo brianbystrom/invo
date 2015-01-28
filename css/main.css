@@ -439,6 +439,7 @@ ul.thumbnails {
 }
 
 .auction img {
+  margin-top: 1px;
   width: 100%;
 }
 
