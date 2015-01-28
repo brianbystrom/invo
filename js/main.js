@@ -168,7 +168,9 @@ $(document).ready(function(){
 $(document).ready(function() {
 
   $('#list').click(function(event){
+
     event.preventDefault();
+
     $('#auctions .item').addClass('list-group-item');
     $('#auctions .item .aucimginfo').addClass('col-xs-3 col-sm-3 col-lg-2');
     $('#auctions .item .caption').addClass('col-xs-3 col-sm-4 col-lg-6');
@@ -189,10 +191,15 @@ $(document).ready(function() {
     $('#auctions .item .timeprice').addClass('col-xs-3');
     $('#auctions .item .timeprice div').removeClass('col-xs-5 col-xs-7');
     $('#auctions .item .timeprice div').addClass('col-xs-12');
+
+    jQuery(".auctime").fitText(.4, { maxFontSize: '40px'});
+    jQuery(".aucprice").fitText(.3, { minFontSize: '20px', maxFontSize: '40px'});
   }); 
 
   $('#grid').click(function(event){
+
     event.preventDefault();
+
     $('#auctions .item').removeClass('list-group-item');
     $('#auctions .item .aucimginfo').removeClass('col-xs-3 col-sm-3 col-lg-2');
     $('#auctions .item .aucinfopivot').addClass('aucinfo pull-right col-xs-4');
@@ -217,6 +224,9 @@ $(document).ready(function() {
     $('#auctions .item .timeprice .auctime').addClass('col-xs-7');
     $('#auctions .item .timeprice .aucprice').addClass('col-xs-5');
     $('#auctions .item .timeprice div').removeClass('col-xs-12');
+
+    jQuery(".auctime").fitText(.4, { maxFontSize: '40px'});
+    jQuery(".aucprice").fitText(.3, { minFontSize: '20px', maxFontSize: '40px'});
   });
 });
 
