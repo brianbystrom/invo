@@ -432,8 +432,8 @@ ul.thumbnails {
 }
 
 .auction .btn {
-  font-size: 17px;
-  line-height: 17px;
+  font-size: 16px;
+  line-height: 16px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -444,38 +444,49 @@ ul.thumbnails {
 }
 
 .auction .aucinfo {
-  margin-top: -25px;
-  padding-top: 5px;
-  padding-bottom: 0px;
+  margin-top: -30px;
+  padding-top: 6px;
+  padding-bottom: 5px;
 }
 
 .timeprice {
   background: #e7e7e7;
   height: 100%;
   border-radius: 3px;
-  margin: 2px -1px;
+  margin: 2px 0px;
 }
 
 .auctime {
  background: cyan;
- height: 61px;
+ height: 60px;
+ font-size: 30px;
 }
 
 .aucprice {
   background: lightblue;
-  height: 61px;
+  height: 60px;
+  font-size: 30px;
 }
 
 .timeprice div p {
-  display: table-cell;
-  vertical-align: middle;
-  height: 61px;
-  text-align: center;
-  width: 100%;
+  position: absolute;
+       top: 0;
+       left: 0;
+       bottom: 0;
+       right: 0;
+       margin: auto;
+  line-height: 60px;
+}
+
+@media (max-width: 500px) {
+  .timeprice {
+    padding: 0 !important;
+  }
 }
 
 .bidtime {
   padding: 0px;
+  margin-top: 2px;
 }
 
 .item.list-group-item
